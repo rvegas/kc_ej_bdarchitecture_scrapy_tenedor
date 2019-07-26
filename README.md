@@ -36,7 +36,15 @@ pip install scrapy
 ```
 
 ### Probando el proyecto ⚙️
- En el fichero <mark>config.py</mark> podemos ver la configuración necesaria para que el programa funcione, ahí deberemos configurar la ruta donde tenemos el csv del dataset de Airbnb si queremos cambiarlo y usar otro diferente al que se adjunta.
+ En el fichero **config.py** podemos ver la configuración necesaria para que el programa funcione, ahí deberemos configurar la ruta donde tenemos el csv del dataset de Airbnb si queremos cambiarlo y usar otro diferente al que se adjunta.
+
+ En el repositorio se incluye el fichero **scrap.sh** llamando a este script desde la terminal de Mac OS se ejecutará el programa en python que obtendrá un csv con todos los restaurantes cercanos a cada apartamento que haya en el dataset de Airbnb. La forma de ejecutar el scrip desde la terminal es:
+
+```
+./scrap.sh
+``` 
+
+**Importante tener instalado python3. El script dejará un nuevo csv con el resultado del cruce en la carpeta del proyecto, si se desea cambiar el dataset, habrá que cambiar también la ruta en la configuración o usar el mismo nombre y ruta del que se adjunta como ejemplo.**
 
 ## Expresiones de Gratitud 🎁
 

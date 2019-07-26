@@ -40,5 +40,5 @@ pip install scrapy
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Da las gracias públicamente 🤓.
-* Sígueme en <a href="https://twitter.com/AsensiFj">Twitter</a>
+* Da las gracias públicamente 🤓
+* Sígueme en <a href="https://twitter.com/AsensiFj">Twitter</a> 🐦

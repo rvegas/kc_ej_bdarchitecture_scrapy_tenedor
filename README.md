@@ -10,14 +10,30 @@ Este proyecto es un ejercicio que forma parte de la práctica que tuve que reali
 
 ### Pre-requisitos 📋
 - Python3
-- <a href="https://pypi.org/project/pip/">pip</a>. Gestor de paquetes para instalar Scrapy
-- <a href="https://scrapy.org/">Scrapy</a>
+- <a href="https://pypi.org/project/pip/">pip</a> (Gestor de paquetes para instalar Scrapy)
+- <a href="https://scrapy.org/">Scrapy</a> (Librería para poder hacer crawling y scrapping con Python)
 - CSV Dataset Airbnb (se adjunta un fichero pequeño para hacer las pruebas)
 
 ### Instalación 🔧
 Para instalar Python3:
-Para instalar pip:
-Para instalar Scrapy:
+
+Basta con ir a la <a href="https://www.python.org/downloads/">web de descargas de Python</a> y descargar la correspondiente a tu sistema operativo.
+
+Para instalar pip (Mac OS):
+
+```
+sudo easy_install pip
+```
+
+```
+sudo pip install --upgrade pip
+```
+
+Para instalar Scrapy (Mac OS):
+
+```
+pip install scrapy
+```
 
 ### Probando el proyecto ⚙️
 

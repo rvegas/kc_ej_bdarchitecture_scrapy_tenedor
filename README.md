@@ -36,6 +36,7 @@ pip install scrapy
 ```
 
 ### Probando el proyecto ⚙️
+ En el fichero <mark>config.py</mark> podemos ver la configuración necesaria para que el programa funcione, ahí deberemos configurar la ruta donde tenemos el csv del dataset de Airbnb si queremos cambiarlo y usar otro diferente al que se adjunta.
 
 ## Expresiones de Gratitud 🎁
 

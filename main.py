@@ -5,15 +5,19 @@ from apartment import *
 def main():
     miApartamento = None
     listaApartamentos = []
+    i = 0
 
     with open(cfc.csvpath) as csvfile:
         reader = csv.reader(csvfile, delimiter=';')
 
         for row in reader:
-            miApartamento = Apartment(pId = row[0], pCodPosta = row[40], pProvincia = row[39], pCiudad = row[38], 
-                pCodPais = row[43], pNombrePais = row[44], pLatitud = row[45], pLongitud = row[45])
+            if i > 0:
+                miApartamento = Apartment(pId = row[0], pCodPosta = row[40], pProvincia = row[39], pCiudad = row[38], 
+                    pCodPais = row[43], pNombrePais = row[44], pLatitud = row[45], pLongitud = row[45])
 
-            listaApartamentos.append(miApartamento)
+                listaApartamentos.append(miApartamento)
+
+            i += 1
 
 if __name__ == "__main__":
     main()

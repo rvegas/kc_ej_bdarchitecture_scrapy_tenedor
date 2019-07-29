@@ -19,6 +19,13 @@ def main():
 
             i += 1
 
+    # Una vez tenemos la lista de apartamentos, la filtramos si así está configurado
+    if cfc.filtroPais != '*':
+        listaApartamentos = [x for x in listaApartamentos if x.codPais() == cfc.filtroPais]
+
+    for ap in listaApartamentos:
+        ap.getRestaurantesCercanos()
+
 if __name__ == "__main__":
     main()
         

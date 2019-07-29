@@ -46,6 +46,8 @@ pip install scrapy
 
 **Importante tener instalado python3. El script dejará un nuevo csv con el resultado del cruce en la carpeta del proyecto, si se desea cambiar el dataset, habrá que cambiar también la ruta en la configuración o usar el mismo nombre y ruta del que se adjunta como ejemplo.**
 
+Para el ejemplo nos vamos a centrar solo en restaurantes cuyo código de país sea España (ES). Este punto está parametrizado en el fichero de configuración, si no deseamos filtrado por país basta con poner el carácter '*' en el filtro de país.
+
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢

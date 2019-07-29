@@ -56,3 +56,6 @@ class Apartment():
             return self.__longitud
         else :
             self.__longitud = valor
+
+    def getRestaurantesCercanos(self):
+        print(self.nombreCiudad())

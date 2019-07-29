@@ -23,6 +23,7 @@ def main():
     if cfc.filtroPais != '*':
         listaApartamentos = [x for x in listaApartamentos if x.codPais() == cfc.filtroPais]
 
+    # Obtenemos los datos de la app El Tenedor
     for ap in listaApartamentos:
         ap.getRestaurantesCercanos()
 

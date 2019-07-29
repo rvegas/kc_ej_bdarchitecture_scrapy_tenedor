@@ -1,6 +1,7 @@
 import config as cfc
 import csv
 from apartment import *
+from restaurant import *
 
 def main():
     miApartamento = None
@@ -25,7 +26,7 @@ def main():
 
     # Obtenemos los datos de la app El Tenedor
     for ap in listaApartamentos:
-        ap.getRestaurantesCercanos()
+        miRest = Restaurant(pApartamento=ap)
 
 if __name__ == "__main__":
     main()

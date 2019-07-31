@@ -14,7 +14,7 @@ def main():
         for row in reader:
             if i > 0:
                 miApartamento = Apartment(pId = row[0], pCodPosta = row[40], pProvincia = row[39], pCiudad = row[38], 
-                    pCodPais = row[43], pNombrePais = row[44], pLatitud = row[45], pLongitud = row[45])
+                    pCodPais = row[43], pNombrePais = row[44], pLatitud = row[45], pLongitud = row[46])
 
                 listaApartamentos.append(miApartamento)
 

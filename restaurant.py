@@ -11,20 +11,20 @@ class Restaurant(scrapy.Spider):
     def __init__(self, pApartamento = Apartment):
         self.__apartamento = pApartamento
         
-        strUrl = 'https://www.eltenedor.es/busqueda/?searchText=' + pApartamento.nombreCiudad() + ', ' + pApartamento.nombrePais() + '&locality=' + pApartamento.nombreCiudad() + '&coordinate=' + pApartamento.latitud() + ',' + pApartamento.longitud()        
+        #self.__strUrl = 'https://www.eltenedor.es/busqueda/?searchText=' + self.__apartamento.nombreCiudad() + ', ' + self.__apartamento.nombrePais() + '&locality=' + self.__apartamento.nombreCiudad() + '&coordinate=' + self.__apartamento.latitud() + ',' + self.__apartamento.longitud()        
+        self.__strUrl = 'https://blog.scrapinghub.com'
+        self.__strUrl = urllib.parse.quote(self.__strUrl)
+        self.start_urls[0] = self.__strUrl
         
-        strUrl = urllib.parse.quote(strUrl)
-        
-        #self.start_urls = [strUrl]
-        
-        #process = CrawlerProcess({
-        #    'USER_AGENT': 'RVEGAS CRAWLER'
-        #})
+        process = CrawlerProcess({
+            'USER_AGENT': 'RVEGAS CRAWLER'
+        })
 
-        #process.crawl(Restaurant)
-        #process.start()
+        process.crawl(Restaurant)
+        process.start()
         
     def parse(self, response):
-        for result in response.css('li.resultItem'):
-            id = result.css('data-restaurant-id ::text').extract_first()
-            print(id)
+        print(response.url)
+        #for result in response.css('li.resultItem'):
+            #id = result.css('data-restaurant-id ::text').extract_first()
+            #print(id)

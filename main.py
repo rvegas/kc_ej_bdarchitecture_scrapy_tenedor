@@ -25,8 +25,12 @@ def main():
         listaApartamentos = [x for x in listaApartamentos if x.codPais() == cfc.filtroPais]
 
     # Obtenemos los datos de la app El Tenedor
+    i = 0
     for ap in listaApartamentos:
-        miRest = Restaurant(pApartamento=ap)
+        if i == 0:
+            miRest = Restaurant(pApartamento=ap)
+
+        i += 1
 
 if __name__ == "__main__":
     main()

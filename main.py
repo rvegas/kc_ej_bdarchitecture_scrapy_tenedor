@@ -28,7 +28,8 @@ def main():
     i = 0
     for ap in listaApartamentos:
         if i == 0:
-            miRest = Restaurant(pApartamento=ap)
+            miRest = Restaurant()
+            miRest.setData(pApartamento=ap)
             miRest.empieza()
 
         i += 1
